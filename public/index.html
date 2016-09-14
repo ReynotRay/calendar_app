@@ -1,18 +1,167 @@
-<!doctype html>
-<title>Chatroom</title>
-<meta charset="utf-8">
+<!DOCTYPE html>
+<html lang="en">
 
-<!-- JS -->
-<script src="//code.jquery.com/jquery-2.1.0.js"></script>
-<script src="/socket.io/socket.io.js"></script>
-<script src="main.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>Calendar</title>
+</head>
+<!--  CSS -->
+<!--   <link rel="stylesheet" type="text/css" href="css/normalize.css"> -->
+<!--   <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
 
-<div id="nickName" style="height: 50px; font-weight: bold;"></div>
-<div>To send private message, type pm|{nickname}|{message}</div>
-<div id="clientCount"></div>
-<div id="clientList">
-    <ul></ul>
-</div>
-<div id="userTyping" style="height: 100px"></div>
-<input type="text">
-<div id="messages"></div>
+<body>
+    <div class="container">
+        <nav class="top-navigation">
+            <ul class="header">
+                <li>Home</li>
+                <li>Calendar</li>
+                <li>Login</li>
+                <li>Logout</li>
+            </ul>
+        </nav>
+        <div class="video">
+            <iframe align="middle" src="https://www.youtube.com/embed/GI3rBwqwDbw?autoplay=1&controls=0&showinfo=0&loop=1&start=03"> </iframe>
+            <div class="black-box">black</div>
+        </div>
+        <p class="register">Register</p>
+              <div class="calendar-wrap">
+             <h1>September 2016</h1>
+               <div class="calendar">
+                <ul class="weekdays">
+                    <li>Sunday</li>
+                    <li>Monday</li>
+                    <li>Tuesday</li>
+                    <li>Wednesday</li>
+                    <li>Thursday</li>
+                    <li>Friday</li>
+                    <li>Saturday</li>
+                </ul>
+                <ul class="days">
+                    <li class="day-other-month">
+                        <div class="date">28</div>
+                    </li>
+                    <li class="day-other-month">
+                        <div class="date">29</div>
+                    </li>
+                    <li class="day-other-month">
+                        <div class="date">30</div>
+                    </li>
+                    <li class="day-other-month">
+                        <div class="date">31</div>
+                    </li>
+                    <li class="day">
+                        <div class="date">1</div>
+                    </li>
+                    <li class="day">
+                        <div class="date">2</div>
+                    </li>
+                    <li class="day">
+                        <div class="date">3</div>
+                    </li>
+                </ul>
+                </ul>
+                <ul class="days">
+                    <li class="day">
+                        <div class="date">4</div>
+                    </li>
+                    <li class="day">
+                        <div class="date">5</div>
+                    </li>
+                    <li class="day">
+                        <div class="date">6</div>
+                    </li>
+                    <li class="day">
+                        <div class="date">7</div>
+                    </li>
+                    <li class="day">
+                        <div class="date">8</div>
+                    </li>
+                    <li class="day">
+                        <div class="date">9</div>
+                    </li>
+                    <li class="day">
+                        <div class="date">10</div>
+                    </li>
+                </ul>
+                </ul>
+                <ul class="days">
+                    <li class="day">
+                        <div class="date">11</div>
+                    </li>
+                    <li class="day">
+                        <div class="date">12</div>
+                    </li>
+                    <li class="day">
+                        <div class="date">13</div>
+                    </li>
+                    <li class="day">
+                        <div class="date">14</div>
+                    </li>
+                    <li class="day">
+                        <div class="date">15</div>
+                    </li>
+                    <li class="day">
+                        <div class="date">16</div>
+                    </li>
+                    <li class="day">
+                        <div class="date">17</div>
+                    </li>
+                </ul>
+                <ul class="days">
+                    <li class="day">
+                        <div class="date">18</div>
+                    </li>
+                    <li class="day">
+                        <div class="date">19</div>
+                    </li>
+                    <li class="day">
+                        <div class="date">20</div>
+                    </li>
+                    <li class="day">
+                        <div class="date">21</div>
+                    </li>
+                    <li class="day">
+                        <div class="date">22</div>
+                    </li>
+                    <li class="day">
+                        <div class="date">23</div>
+                    </li>
+                    <li class="day">
+                        <div class="date">24</div>
+                    </li>
+                </ul>
+                <ul class="days">
+                    <li class="day">
+                        <div class="date">25</div>
+                    </li>
+                    <li class="day">
+                        <div class="date">26</div>
+                    </li>
+                    <li class="day">
+                        <div class="date">27</div>
+                    </li>
+                    <li class="day">
+                        <div class="date">28</div>
+                    </li>
+                    <li class="day">
+                        <div class="date">29</div>
+                    </li>
+                    <li class="day">
+                        <div class="date">30</div>
+                    </li>
+                    <li class="day-other-month">
+                        <div class="date">1</div>
+                    </li>
+                </ul>
+            </div>
+    </div>
+    <!-- container ends-->
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="js/main.js">
+    </script>
+</body>
+
+</html>
