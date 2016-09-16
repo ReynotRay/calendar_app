@@ -26,9 +26,6 @@ Storage.prototype.add = function(name) {
 };
 
 var storage = new Storage();
-
-storage.add('fuckl');
-storage.add('shits');
 console.log(storage);
 
 //app will use public directory as static

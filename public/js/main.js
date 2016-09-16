@@ -5,7 +5,7 @@ var TodoList = function() {
     this.input = $('#item-input');
     this.input.keydown(this.onAddInputKeydown.bind(this));
     this.main = $('#main');
-    this.main.on('dblclick', 'li',
+    this.main.on('click', 'li',
                  this.onEditItemClicked.bind(this));
     this.main.on('keydown', 'li input',
                  this.onEditInputKeydown.bind(this));
@@ -60,11 +60,11 @@ TodoList.prototype.onEditFocusOut = function (event) {
 	input.hide();
 	display.show();
 	event.preventDefault();
-}
+};
 TodoList.prototype.onDeleteItemClicked = function (event){
 	var id = $(event.target).parents('li').data('id');
     this.deleteItem(id);
-}
+};
 TodoList.prototype.getItems = function () {
 	var ajax = $.ajax('/items', {
 		type: 'Get',
@@ -115,12 +115,20 @@ TodoList.prototype.updateItemsView = function() {
 };
 
 $(document).ready(function() {
+	$('#main').hide();
     $('.header').hide();
     $('.calendar-wrap').hide();
     $('.register').hide();
     $('.register').delay(5000).fadeIn();
     $('.header').delay(5000).fadeIn();
     $('.calendar-wrap').delay(7000).fadeIn();
+    $( ".register" ).click(function() {
+ 	$(".register").fadeOut();
+ 	$('#main').fadeIn();  
+});
      var app = new TodoList();
 });
+
+
+
 
