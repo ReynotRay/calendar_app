@@ -1,10 +1,10 @@
-var express = require('express');
-var router = express.Router();
-var controller = require('./user.controller');
+// var express = require('express');
+// var router = express.Router();
+// var controller = require('./user.controller');
 
-//homepage
+// //homepage
 
-router.get('/users/login', controller.get);
-router.post('/:username/:password', controller.create);
+// router.get('/users/login', controller.get);
+// router.post('/:username/:password', controller.create);
 
-module.exports = router;
+// module.exports = router;

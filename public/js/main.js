@@ -118,12 +118,11 @@ $(document).ready(function() {
 	$('#main').hide();
     $('.header').hide();
     $('.calendar-wrap').hide();
-    $('.register').hide();
-    $('.register').delay(5000).fadeIn();
-    $('.header').delay(5000).fadeIn();
-    $('.calendar-wrap').delay(7000).fadeIn();
-    $( ".register" ).click(function() {
- 	$(".register").fadeOut();
+    $('.organized').hide();
+    $('.organized').delay(3000).fadeIn();
+    $('.header').delay(3000).fadeIn();
+    $( ".organized" ).click(function() {
+ 	$(".organized").fadeOut();
  	$('#main').fadeIn();  
 });
      var app = new TodoList();

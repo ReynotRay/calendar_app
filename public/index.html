@@ -22,43 +22,43 @@
             <video id="video" autoplay loop src="http://cdn.calm.com/scenes/scene-WdVY0QGD4.mp4?v=1450780565679"></video>
         </div>
         <ul class="header">
-            <li>Home</li>
-            <li>Register </li>
             <li>To-Do App</li>
-            <li>Logout</li>
+            <li role="presentation"><a href="/users/dashboard">Dashboard</a></li>
+            <li role="presentation"><a href="/users/register">Register</a></li>
+            <li role="presentation"><a href="/users/login">Login</a></li>
+            <li role="presentation"><a href="/users/logout">Logout</a></li>
         </ul>
-        <div class="register">
+        <div class="organized">
             <p>Stay Organized</p>
         </div>
-    </div>
-    <div id="main">
-        <!-- <h1>Stay Organized</h1> -->
-        <input type="text" placeholder="Add a to-do..." id="item-input" autocomplete="off" autofocus>
-        <ul id="item-list">
-        </ul>
-    </div>
-    <!-- Handlebars templates -->
-    <script id="item-list-template" type="text/x-handlebars-template">
-        <ul id="item-list">
-            {{#each items}}
-            <li class="item" data-id="{{ id }}{{ _id }}">
-                <div class="display">
-                    <span class="name">{{name}}</span>
-                    <div class="delete">
-                        <a href="#" class="delete-item">
-                            <i class="fa fa-trash-o"></i>
+        <div id="main">
+            <!-- <h1>Stay Organized</h1> -->
+            <input type="text" placeholder="Add a to-do..." id="item-input" autocomplete="off" autofocus>
+            <ul id="item-list">
+            </ul>
+        </div>
+        <!-- Handlebars templates -->
+        <script id="item-list-template" type="text/x-handlebars-template">
+            <ul id="item-list">
+                {{#each items}}
+                <li class="item" data-id="{{ id }}{{ _id }}">
+                    <div class="display">
+                        <span class="name">{{name}}</span>
+                        <div class="delete">
+                            <a href="#" class="delete-item">
+                                <i class="fa fa-trash-o"></i>
                             </a>
-                            </div>
-                            <i class="fa fa-star-o"></i>
-                        
-                    
-                </div>
-                <input type="text" style="display: none">
-            </li>
-            {{/each}}
-        </ul>
-    </script>
-    <div class="footer"></div>
+                        </div>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <input type="text" style="display: none">
+                </li>
+                {{/each}}
+            </ul>
+        </script>
+        <form action=""></form>
+        <div class="footer"></div>
+    </div>
 </body>
 <!-- container ends-->
 <!-- JS -->

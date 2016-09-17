@@ -10,11 +10,18 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.15.2",
+    "bcryptjs": "*",
     "cookie-parser": "^1.4.3",
+    "connect-flash": "*",
     "express": "^4.14.0",
+    "express-handlebars":"*",
     "express-session": "^1.14.1",
+    "express-validator": "*",
+    "mongodb": "*",
     "mongoose": "^4.6.0",
     "passport": "^0.3.2",
+    "express-handlebars":"*",
+    "passport-http": "*",
     "passport-local": "^1.0.0"
   }
 }
