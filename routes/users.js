@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var passport = require('passport');
-var LocalStrategy = require('passport-local').Strategy
+var LocalStrategy = require('passport-local').Strategy;
 
 var User = require("../api/user/user.model");
 
@@ -91,9 +91,13 @@ passport.deserializeUser(function (id, done) {
   });
 });
 
-
+//after router.post it will run passport.authenticate and then if there is successRedirect
 router.post('/login',
-    passport.authenticate('local', { successRedirect: '/', failureRedirect: '/users/login', failureFlash: true }),
+    passport.authenticate('local', { 
+        successRedirect: '/users/todoapp', 
+        failureRedirect: '/users/login', 
+        //failureFlash: true 
+    }),
     function(req, res) {
         res.redirect('/');
     });

@@ -2,15 +2,18 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Login APP</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="stylesheet" type="stylesheets" href="/css/styles.css">
+	<title>To-Do app</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.3.0/handlebars.js"></script>
+<!-- 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+	<link rel="stylesheet" href="/css/styles.css">
+  <script src="/js/main.js"></script>
   </head>
 <body>
-    <div class="container">
+    <div class="container-layout">
       <div class="header clearfix">
         <nav>
-          <ul class="nav nav-pills pull-right">
+          <ul class="header">
           <!-- if user is logged in -->
                        {{#if user}}
      		<li role="presentation"><a href="/users/logout">Logout</a></li>
@@ -18,14 +21,11 @@
             <!-- if users is logged out -->
             {{else}}
             <li role="presentation"><a href="/users/login">Login</a></li>
-            <li role="presentation"><a href="/users/register">Register</a></li>
-            <li role="presentation"><a href="/">HOME</a></li>
-            <li role="presentation"><a href="/users/todoapp">To Do App</a></li>      
+            <!-- <li role="presentation"><a href="/users/register">Register</a></li> -->
+            <li role="presentation"><a href="/">Home</a></li>
+           <!--  <li role="presentation"><a href="/users/todoapp">To Do App</a></li>  -->     
             {{/if}}
           </ul>
-
-
-
         </nav>
         <h3 class="text-muted">To Do app</h3>
       </div>
@@ -43,9 +43,8 @@
           {{#if error}}
             <div class="alert alert-danger">{{error}}</div>
           {{/if}}
-         {{{body}}}
         </div>
-
+         <div class="container-body">{{{body}}}</div>
       <footer class="footer">
       </footer>
 

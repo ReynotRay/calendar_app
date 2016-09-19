@@ -6,6 +6,7 @@ body {
 .video-wrapper{
     display: inline-block;
     overflow: hidden;
+
 }
 
 video {
@@ -20,8 +21,13 @@ video {
 
     }
 
-h1{
+#checkmark{
+    width: 56px;
+}
+#todo{
+    font-family: 'Cedarville Cursive', cursive;
     color: white;
+    font-size: 45px;
 }
 
 .container {
@@ -29,47 +35,58 @@ h1{
     margin: 0 auto;
 }
 
-.header {
-    position: fixed;
+.header{
+    position: absolute;
     width: 1060px;
-    display: flex;
-    font-size: 22px;
-    color: #09c;
-    background-color: black;
+    text-decoration: none;
+    font-size: 30px;
     top: 0px;
-    line-height: 2rem;
-    //float: right;
     list-style: none;
     font-family: sans-serif;
+    display: flex;
 }
 
 .header li {
-    margin: 9px 60px 5px 4px;
+    margin: 54px -454px 0px 462px;
 }
 
 .header li:hover {
     color: white;
 }
 
-.organized {  
-    position: relative;
-    font-size: 30px;
+.header li > a{
+    color:green;
+    text-decoration: none;
+    color: #09c;
+    margin-left: 30px;
+}
+.header li > a:hover{
+    color:white;
+}
+
+
+.register {  
+    position: absolute;
+    font-size: 37px;
     font-family: sans-serif;
     color: #09c;
-    text-align: center;
-    margin: auto;
     cursor: pointer;
     border: 2px solid;
     border-radius: 2px;
-    padding: 10px;
-    width: 205px;
-    margin-top: -700px;
+    display: block;
+    margin-top: -585px;
+    margin-left: 473px;
+    padding: 25px;
+    text-decoration: none;
   }
 
-.organized:hover {
+.register a {
+    text-decoration: none;
+    color: #09c;
+}
+.register:hover{
     background-color: #09c;
-    color: black;
-    border: 2px #09c;
+    color: white;
 }
 
 
@@ -95,7 +112,10 @@ input {
     color:white;
 }
 div>input {
-    width: 400px;
+        width: 400px;
+    font-size: 21px;
+    color: black;
+    background: #45d0ff;
 }
 li input {
     width: 380;
@@ -146,4 +166,24 @@ div.delete {
 .footer{
     background-color: black;
     color: white;
+}
+
+.container-body{
+    background: white;
+    color:white;
+    margin:auto;
+    width:500px;
+    margin-top: 150px;
+}
+input:focus{
+    border: red 10px;
+    background: white;
+}
+
+.page-header{
+    text-align: center;
+    color: black;
+}
+label{
+    color:black;
 }

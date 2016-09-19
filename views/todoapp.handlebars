@@ -1,1 +1,27 @@
-to do app here
+test1
+<div class="fucks">test fucks</div>        
+
+        <div id="main">test
+            <input type="text" placeholder="Add a to-do..." id="item-input" autocomplete="off" autofocus>
+            <ul id="item-list">moretest
+            </ul>
+        </div>
+
+        <script id="item-list-template" type="text/x-handlebars-template">
+            <ul id="item-list">
+                {{#each items}}
+                <li class="item" data-id="{{ id }}{{ _id }}">
+                    <div class="display">
+                        <span class="name">{{name}}</span>
+                        <div class="delete">
+                            <a href="#" class="delete-item">
+                                <i class="fa fa-trash-o"></i>
+                            </a>
+                        </div>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <input type="text" style="display: none">
+                </li>
+                {{/each}}
+            </ul>
+        </script>

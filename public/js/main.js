@@ -115,16 +115,15 @@ TodoList.prototype.updateItemsView = function() {
 };
 
 $(document).ready(function() {
-	$('#main').hide();
-    $('.header').hide();
-    $('.calendar-wrap').hide();
-    $('.organized').hide();
-    $('.organized').delay(3000).fadeIn();
-    $('.header').delay(3000).fadeIn();
-    $( ".organized" ).click(function() {
- 	$(".organized").fadeOut();
- 	$('#main').fadeIn();  
-});
+	//$('#main').hide();
+    //$('.header').hide();
+    //$('.register').hide();
+    //$('.register').delay(3000).fadeIn();
+    //$('.header').delay(3000).fadeIn();
+    //$( ".organized" ).click(function() {
+ 	//$(".organized").fadeOut();
+ 	//$('#main').fadeIn();  
+
      var app = new TodoList();
 });
 
